@@ -1,0 +1,439 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.9) 100%),
+                url('../images/IN-en-20240102-trifectadaily-perspective_alpha_website_small.jpg') no-repeat center center/cover;
+    height: 75%;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); */
+    border-bottom: 10px solid rgb(59, 59, 59);
+    
+}
+.nav-bar{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left:10%;
+    margin-right:10%;
+    padding:40px;
+}
+.nav-logo img{
+    width:140px;
+}
+
+.header-content{
+    /* position: absolute;
+    top:25%;
+   right:26%; */
+   text-align: center;
+   margin-top:80px;
+   
+}
+.header-content h1{
+    font-size: 60px;
+    color: white;
+    font-weight: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-content h5, .email2 h5{
+    color: white;
+    padding:20px;
+    font-size: 24px;
+    font-family:sans-serif;
+}
+
+.email input{
+    background-color: transparent;
+    padding:15px 10px;
+    width:20%;
+    color:#fff;
+    border-radius: 10px;
+    font-size: 20px;
+    border:1px solid rgb(141, 130, 130);
+
+    outline: none;
+}
+.email button{
+    margin-top:20px;
+    padding:12px;
+    background-color: red;
+    /* border-radius: 10px; */
+    color:white;
+    /* margin-left:-10px; */
+    border:none;
+    width:200px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+        background-color:rgb(236, 42, 42);
+    }
+}
+.nav-button button{
+    padding:12px;
+    background-color: red;
+    /* border-radius: 10px; */
+    color:white;
+    /* margin-left:-10px; */
+    border:none;
+    width:100px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+        background-color:rgb(236, 42, 42);
+    }
+}
+
+/* enjoy-yourtv */
+.enjoy-yourtv{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:58px;
+    border-bottom: 10px solid rgb(59, 59, 59);
+    
+}
+.enjoy-image video{
+position:absolute;
+right:11%;
+bottom:-19%;
+z-index: -1;
+
+}
+.enjoy-image img{
+    z-index: 1;
+}
+.text-enjoy h1{
+    font-size: 48px;
+    font-weight: 900;
+    padding:20px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+.text-enjoy h4{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+
+.image img{
+    z-index: 1;
+}
+.image video{
+    position: absolute;
+    right:18%;
+    top:206%;
+    z-index: -1;
+
+}
+/* accordian */
+.accordian{
+    max-width:1300px;
+    margin:0 auto;
+
+}
+.tab{
+    margin-bottom:10px;
+  
+    background-color:rgb(59, 59, 59);
+}
+.question-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(92, 92, 92);
+    }
+}
+.toggle-btn{
+    background-color:transparent;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    font-size: 60px;
+    cursor: pointer;
+    font-weight: 200;
+
+}
+.close-btn{
+    color:#fff;
+    border: none;
+    padding:8px 121px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+
+}
+.answer{
+    display: none;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+.answer.show{
+    display: block;
+}
+.faq-heading h1{
+    font-size: 48px;
+    font-weight: 900;
+    padding:80px 0px;
+    padding-bottom: 50px;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    text-align: center;
+}
+.answer p, .question-2 h2{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 300;
+    font-family:sans-serif;
+    padding:10px 20px ;
+}
+.email2{
+    text-align: center;
+    padding: 60px 40px;
+    border-bottom: 10px solid rgb(59, 59, 59);
+}
+
+/* footer */
+.footer1{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:60px 50px;
+    margin-right:50px;
+
+}
+.block a{
+    text-decoration: none;
+    color:white;
+   line-height: 40px;
+   border-bottom: 1px solid white;
+}
+select{
+    padding:8px 1px;
+    width:100px;
+    font-size: 15px;
+    border-radius: 3px;
+    background-color: rgb(59, 59, 59);
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+i {
+    color:white;
+    font-size: 40px;
+}
+
+/* login.html */
+.head-logo{
+    padding:50px;
+}
+.head-logo img{
+    width:140px;
+}
+.head{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.9) 100%),
+    url('../images/IN-en-20240102-trifectadaily-perspective_alpha_website_small.jpg') no-repeat center center/cover;
+height: 120%;
+}
+.form-con{
+   
+    padding:60px;
+    height:50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 450px;
+    border-radius: 10px;
+   
+    margin: 0 auto;
+}
+.form-con h3{
+    font-size: 35px;
+    color: white;
+    padding:20px 0;
+    font-weight: 800px;
+    font-family: sans-serif;
+}
+.form2 input{
+    padding:15px 10px;
+    width:100%;
+    margin-bottom:10px;
+    font-size: 15px;
+    background-color: transparent;
+    outline: none;
+    border:1px solid rgb(59, 59, 59);
+    border-radius: 5px;
+
+}
+.form2 button{
+    padding:15px 5px;
+    width:100%;
+    font-size: 18px;
+    background-color: red;
+    color:white;
+    border:1px solid red;
+    border-radius: 10px;
+    margin-top:30px;
+    margin-bottom:20px;
+
+}
+.form2{
+    text-align: center;
+}
+.form2 a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* login footer */
+
+.footer1{
+    display:flex;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+   
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.8);
+height:28%;
+margin-top: 100px;
+}
+.footer1 a{
+    text-decoration: none;
+    color:white;
+   line-height: 54px;
+   border-bottom: 1px solid white;
+}
+
+
+/* responsiveness */
+@media screen and (max-width:500px){
+    .enjoy-yourtv{
+        display:grid;
+        grid-template-columns: 1fr;
+        padding:0px;
+        border-bottom: 10px solid rgb(59, 59, 59);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding:40px 20px;
+    }
+    .enjoy-image video{
+        position:absolute;
+        right:11%;
+        bottom:-29%;
+        z-index: -1;
+        width:80%;
+        
+        }
+        .enjoy-image img{
+            z-index: 1;
+            width:100%;
+        }
+        .text-enjoy h1{
+            font-size: 25px;
+            font-weight: 900;
+            padding:20px 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:white;
+        }
+        .text-enjoy h4{
+            font-size: 22px;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:white;
+        }
+        
+        .image img{
+            z-index: 1;
+            width:100%;
+        }
+        .image video{
+            position: absolute;
+            right:22%;
+            top:215%;
+            width:55%;
+            z-index: -1;
+        
+        }
+        .header-content{
+          
+           margin-top:20px;
+           
+        }
+        .header-content h1{
+            font-size: 40px;
+         
+        }
+        .header-content h5, .email2 h5{
+            color: white;
+            padding:20px;
+            font-size: 18px;
+        
+        }
+        .email input{
+            background-color: transparent;
+            padding:7px 10px;
+            width:50%;
+            color:#fff;
+            border-radius: 10px;
+            font-size: 20px;
+            border:1px solid rgb(141, 130, 130);
+        
+            outline: none;
+        }
+        .email button{
+            margin-top:20px;
+            padding:12px;
+            background-color: red;
+            /* border-radius: 10px; */
+            color:white;
+            /* margin-left:-10px; */
+            border:none;
+            width:120px;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        
+            &:hover{
+                background-color:rgb(236, 42, 42);
+            }
+        }
+        .nav-button button{
+            display: none;
+        }
+        
+        
+        .toggle-btn{
+          
+            padding:8px 12px;
+            font-size: 30px;
+            
+        
+        }
+        .faq-heading h1{
+            font-size: 25px;
+          
+        }
+        .accordian{
+            padding: 0px 20px;
+        }
+        .footer1{
+            display:grid;
+            grid-template-columns: 1fr;
+            padding:20px 30px;
+            text-align: center;
+            margin-right:0px;
+        
+        }
+}
